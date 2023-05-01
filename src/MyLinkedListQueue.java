@@ -15,4 +15,11 @@ public class MyLinkedListQueue<T> {
     public boolean isEmpty() {
         return queue.isEmpty(); //returns true if the queue is empty, otherwise false
     }
+
+    public T dequeue() {
+        if (isEmpty()) { //checks for whether the queue is empty
+            throw new NoSuchElementException(); //throws an exception if true
+        }
+        return queue.removeFirst(); //returns the front element, while removing it
+    }
 }
