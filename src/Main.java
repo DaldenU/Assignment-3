@@ -55,6 +55,23 @@ public class Main {
         System.out.println(linkedListStack.isEmpty()); //prints false
         //+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 
+        //+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+        //Creating MyLinkedListQueue object
+        MyLinkedListQueue<String> linkedListQueue = new MyLinkedListQueue<>();
+
+        //adding elements with the "enqueue" method
+        linkedListQueue.enqueue("mathematics");
+        linkedListQueue.enqueue("Mos Def");
+        linkedListQueue.enqueue("Eminem");
+        //outputting the size of queue
+        System.out.println(linkedListQueue.size()); //prints 3
+        //getting the front element of the queue, while removing it
+        System.out.println(linkedListQueue.dequeue()); //prints "mathematics"
+        //getting the front element of the queue, without removing it
+        System.out.println(linkedListQueue.peek()); //prints "Mos Def"
+        //checking whether the queue is empty
+        System.out.println(linkedListStack.isEmpty()); //prints false
+        //+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 
     }
 }
