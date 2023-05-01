@@ -10,4 +10,8 @@ public class MyArrayListQueue<T> {
     public void enqueue(T element) {
         queue.add(element); //Add an element to the back of the queue.
     }
+
+    public boolean isEmpty() {
+        return queue.isEmpty(); //returns true if the queue is empty, otherwise false
+    }
 }
