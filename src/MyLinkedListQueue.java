@@ -22,4 +22,11 @@ public class MyLinkedListQueue<T> {
         }
         return queue.removeFirst(); //returns the front element, while removing it
     }
+
+    public T peek() {
+        if (isEmpty()) { //checks for whether the queue is empty
+            throw new NoSuchElementException(); //throws an exception if true
+        }
+        return queue.getFirst(); //returns the front element, without removing it
+    }
 }
