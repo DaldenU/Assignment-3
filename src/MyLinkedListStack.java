@@ -28,4 +28,8 @@ public class MyLinkedListStack<T> {
         }
         return linkStack.getFirst(); //returns the top element of the stack, without removing it
     }
+
+    public int size() {
+        return linkStack.size(); //returns the size of stack
+    }
 }
