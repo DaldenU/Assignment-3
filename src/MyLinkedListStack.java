@@ -21,4 +21,11 @@ public class MyLinkedListStack<T> {
         }
         return linkStack.removeFirst(); //returns the top element of the stack, while removing it
     }
+
+    public T peek() {
+        if (isEmpty()) { //checks for whether the stack is empty
+            throw new EmptyStackException(); //throws an exception if true
+        }
+        return linkStack.getFirst(); //returns the top element of the stack, without removing it
+    }
 }
