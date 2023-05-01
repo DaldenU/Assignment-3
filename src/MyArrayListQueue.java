@@ -23,4 +23,11 @@ public class MyArrayListQueue<T> {
         queue.remove(0); //removes the front element
         return element; //returns the front element
     }
+
+    public T peek() {
+        if (isEmpty()) { //checks for whether the queue is empty
+            throw new NoSuchElementException(); //throws an exception if true
+        }
+        return queue.get(0); //returns the front element of the queue without removing it
+    }
 }
