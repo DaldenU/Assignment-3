@@ -1,4 +1,5 @@
 import java.util.ArrayList;
+import java.util.EmptyStackException;
 
 public class MyArrayListStack<T> {
     private ArrayList<T> arrStack; //Declaration of an ArrayList to hold the elements of the stack.
@@ -17,5 +18,12 @@ public class MyArrayListStack<T> {
 
     public boolean isEmpty() {
         return arrStack.isEmpty(); //returns true if the stack is empty, otherwise false
+    }
+
+    public T pop() {
+        if (isEmpty()) { //checks for whether the stack is empty
+            throw new EmptyStackException(); //returns an exception if true
+        }
+        return arrStack.remove(size() - 1); //returns the top element of the stack
     }
 }
