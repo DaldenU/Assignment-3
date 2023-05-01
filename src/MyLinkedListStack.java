@@ -14,4 +14,11 @@ public class MyLinkedListStack<T> {
     public boolean isEmpty() {
         return linkStack.isEmpty(); //returns true if the stack is empty, otherwise false
     }
+
+    public T pop() {
+        if (isEmpty()) { //checks for whether the stack is empty
+            throw new EmptyStackException(); //throws an exception if true
+        }
+        return linkStack.removeFirst(); //returns the top element of the stack, while removing it
+    }
 }
