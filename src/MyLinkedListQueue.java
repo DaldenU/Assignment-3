@@ -11,4 +11,8 @@ public class MyLinkedListQueue<T> {
     public void enqueue(T element) {
         queue.addLast(element); //Add an element to the back of the queue.
     }
+
+    public boolean isEmpty() {
+        return queue.isEmpty(); //returns true if the queue is empty, otherwise false
+    }
 }
