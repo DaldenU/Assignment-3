@@ -37,6 +37,24 @@ public class Main {
         System.out.println(linkedListStack.peek()); //prints "you"
         //+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 
+        //+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+        //Creating MyArrayListQueue object
+        MyArrayListQueue<Integer> arrayListQueue = new MyArrayListQueue<>();
+
+        //adding elements with the "enqueue" method
+        arrayListQueue.enqueue(34);
+        arrayListQueue.enqueue(56);
+        arrayListQueue.enqueue(-3);
+        //outputting the size of queue
+        System.out.println(arrayListQueue.size()); //prints 3
+        //getting the front element of the queue, while removing it
+        System.out.println(arrayListQueue.dequeue()); //prints "34"
+        //getting the front element of the queue, without removing it
+        System.out.println(arrayListQueue.peek()); //prints "56"
+        //checking whether the queue is empty
+        System.out.println(linkedListStack.isEmpty()); //prints false
+        //+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
 
     }
 }
