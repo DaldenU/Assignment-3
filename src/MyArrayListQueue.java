@@ -30,4 +30,8 @@ public class MyArrayListQueue<T> {
         }
         return queue.get(0); //returns the front element of the queue without removing it
     }
+
+    public int size() {
+        return queue.size(); //returns the size of queue
+    }
 }
