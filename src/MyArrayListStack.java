@@ -22,8 +22,15 @@ public class MyArrayListStack<T> {
 
     public T pop() {
         if (isEmpty()) { //checks for whether the stack is empty
-            throw new EmptyStackException(); //returns an exception if true
+            throw new EmptyStackException(); //throws an exception if true
         }
-        return arrStack.remove(size() - 1); //returns the top element of the stack
+        return arrStack.remove(size() - 1); //returns the top element of the stack, while removing it
+    }
+
+    public T peek() {
+        if (isEmpty()) { //checks for whether the stack is empty
+            throw new EmptyStackException(); //throws an exception if true
+        }
+        return arrStack.get(size() - 1); //returns the top element of the stack, without removing it
     }
 }
