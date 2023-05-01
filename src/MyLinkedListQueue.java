@@ -29,4 +29,8 @@ public class MyLinkedListQueue<T> {
         }
         return queue.getFirst(); //returns the front element, without removing it
     }
+
+    public int size() {
+        return queue.size(); //returns the size of queue
+    }
 }
