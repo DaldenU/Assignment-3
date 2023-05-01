@@ -8,6 +8,10 @@ public class MyLinkedListStack<T> {
     }
 
     public void push(T element) {
-        linkStack.addFirst(element); ////adds an element to the top of the stack
+        linkStack.addFirst(element); //adds an element to the top of the stack
+    }
+
+    public boolean isEmpty() {
+        return linkStack.isEmpty(); //returns true if the stack is empty, otherwise false
     }
 }
