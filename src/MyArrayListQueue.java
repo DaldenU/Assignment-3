@@ -6,4 +6,8 @@ public class MyArrayListQueue<T> {
     public MyArrayListQueue(){
         queue = new ArrayList<>(); // Initialisation of ArrayList in the constructor.
     }
+
+    public void enqueue(T element) {
+        queue.add(element); //Add an element to the back of the queue.
+    }
 }
